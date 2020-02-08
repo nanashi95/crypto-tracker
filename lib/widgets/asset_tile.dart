@@ -9,6 +9,7 @@ class AssetTile extends StatelessWidget {
   Widget build(BuildContext context) => Column(
     children: <Widget>[
       ListTile(
+        leading: Image.asset('lib/images/assets_icons/${_asset.symbol}.png'),
         title: Text(_asset.symbol, style: TextStyle(fontWeight: FontWeight.bold)),
         subtitle: Text(_asset.name),
         /*leading: Container(
